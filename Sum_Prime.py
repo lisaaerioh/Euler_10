@@ -3,21 +3,18 @@
 
 from math import sqrt
 
-
+# Function to check whether a number is prime
 def is_prime(n):
+    
+    # If the number is less than 3, it is prime
     if (n <= 3):
         return True
+    
+    # Check to see if the number is divisible by any number starting from 2 to 
     for number in xrange(2,int(sqrt(n) +1)):
         if n%number == 0:
             return False
     return True
-
-
-
-
-print is_prime(25)
-print is_prime(100)
-print is_prime(3523)
 
 
 def sum_of_primes(number):
