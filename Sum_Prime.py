@@ -30,4 +30,5 @@ def sum_of_primes(number):
     return sum
 
 
-print sum_of_primes(100)
+def main(): 
+    print sum_of_primes(2000000)
